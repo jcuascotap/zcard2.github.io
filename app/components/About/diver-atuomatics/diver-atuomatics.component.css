@@ -1,0 +1,65 @@
+
+.financial-management {
+    background-color: #fff;
+}
+
+.financial-management h6 {
+    font-size: 1rem;
+    color: #e9780b;
+    font-weight: bold;
+}
+
+.financial-management h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.financial-management .financial-info .icon {
+    font-size: 2.5rem;
+    color: #e9780b;
+}
+
+.financial-management .financial-info h4 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.financial-management .financial-info p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.financial-management .financial-info a {
+    color: #e9780b;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.financial-management .financial-info a:hover {
+    color: #e64a19;
+}
+
+.financial-management .financial-details img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.financial-management .statistic {
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .financial-management h2 {
+        font-size: 2rem;
+    }
+
+    .financial-management .financial-info h4 {
+        font-size: 1.25rem;
+    }
+
+    .financial-management .financial-info p {
+        font-size: 0.875rem;
+    }
+}

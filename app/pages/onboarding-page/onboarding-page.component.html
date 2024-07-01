@@ -1,0 +1,76 @@
+<form id="signUpForm">
+    <!-- start step indicators -->
+    <div class="form-header d-flex mb-4">
+        <span class="stepIndicator">Valida tu información</span>
+        <span class="stepIndicator">Escaneo Biometrico</span>
+        <span class="stepIndicator">Detalles personales</span>
+        <span class="stepIndicator">Escoge tu tarjeta</span>
+        <span class="stepIndicator">Obtén tu tarjeta</span>
+    </div>
+    <!-- end step indicators -->
+
+    <!-- step one -->
+    <div class="step">
+        <p class="text-center mb-4">Valida tu información</p>
+        <div class="mb-3">
+            <label for="Cedula">Ingrese su cedula:</label>
+            <input type="text" id="Cedula" placeholder="Numero de Cedula" oninput="this.className = ''" name="Cedula">
+        </div>
+    </div>
+
+    <!-- step two -->
+    <div class="step">
+        <p class="text-center mb-4">Escaneo Biometrico</p>
+        <div class="mb-3">
+            <label for="Cedula">Activa tu camara para el escaneo</label>
+            <button type="button" class="btn btn-outline-dark" style="margin-left: 10px;">Iniciar escaneo</button>
+        </div>
+    </div>
+
+    <!-- step three -->
+    <div class="step">
+        <p class="text-center mb-4">Datos personales</p>
+        <div class="mb-3">
+            <label for="NombreCompleto">Nombre Completo:</label>
+            <input type="text" id="NombreCompleto" placeholder="Nombre Completo" oninput="this.className = ''" name="NombreCompleto">
+        </div>
+        <div class="mb-3">
+            <label for="Telefono">Teléfono:</label>
+            <input type="text" id="Telefono" placeholder="Teléfono" oninput="this.className = ''" name="Telefono">
+        </div>
+        <div class="mb-3">
+            <label for="address">Dirección:</label>
+            <input type="text" id="address" placeholder="Dirección" oninput="this.className = ''" name="address">
+        </div>
+        <div class="mb-3">
+            <label for="bank-info-file">Sube tu información bancaria (.pdf,.doc,.docx,.txt):</label>
+            <input type="file" id="bank-info-file" (change)="onFileSelected($event)" accept=".pdf,.doc,.docx,.txt" class="file-input">
+        </div>
+    </div>
+
+    <!-- step three -->
+    <div class="step">
+        <p class="text-center mb-4">Escoge tu tarjeta</p>
+        <div class="image-select-container">
+            <div *ngFor="let img of ['Tarjetas/Tarjeta1.jpg', 'Tarjetas/Tarjeta2.jpg', 'Tarjetas/Tarjeta3.jpg', 'Tarjetas/Tarjeta4.jpg']" class="image-option"
+                [class.selected]="selectedImage === img" (click)="selectImage(img)">
+                <img [src]="img" alt="Image option">
+            </div>
+        </div>
+    </div>
+
+    <!-- step Four -->
+    <div class="step">
+        <p class="text-center mb-4">Obtén tu tarjeta</p>
+        <div class="mb-3">
+            <input type="email" placeholder="Email Address" oninput="this.className = ''" name="email">
+        </div>
+    </div>
+
+    <!-- start previous / next buttons -->
+    <div class="form-footer d-flex">
+        <button type="button" id="prevBtn" (click)="nextPrev(-1)">Previous</button>
+        <button type="button" id="nextBtn" (click)="nextPrev(1)">Next</button>
+    </div>
+    <!-- end previous / next buttons -->
+</form>

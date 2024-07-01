@@ -1,0 +1,90 @@
+.subscribe {
+    background-color: #151515;
+}
+
+.subscribe-box {
+    background: linear-gradient(152deg, #303030, #1b1b1b);
+    border-radius: 15px;
+    border: 1px solid #505050;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.text-suscribe {
+    color: rgb(164 164 164);
+}
+
+.subscribe h2 {
+    font-size: 2rem;
+    padding: 0 300px;
+}
+
+.subscribe .text-orange {
+    color: #ff5722;
+}
+
+
+.subscribe .form-inline .form-control {
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+}
+
+.subscribe .form-inline .input-group-text {
+    border-radius: 10px 0 0 10px;
+    background: none;
+    color: white;
+    height: 100%;
+    border: none;
+}
+
+.btn-orange {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-orange:hover {
+    background-color: #000000;
+    color: white;
+}
+
+
+.form-Sub-input {
+    background: none;
+    border: none;
+}
+
+.form-Sub-input::placeholder {
+    color: rgba(255, 255, 255, 0.859);
+}
+
+
+.form-Sub {
+    background-color: #ff5722;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .form-Sub-input{
+        font-size: 13px;
+    }
+
+    .btn-orange {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 11px;
+    }
+
+    .subscribe h2 {
+        font-size: 1.3rem;
+        padding: 0 10px;
+    }
+
+    .text-suscribe {
+        font-size: 13px;
+    }
+}

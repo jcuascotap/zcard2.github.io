@@ -1,0 +1,50 @@
+<body>
+  <!-- src/app/navbar/navbar.component.html -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/" style="max-width: 70%;">
+      <img src="landing-logo.png" alt="Bootstrap" class="img-logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-text justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="/Home#features">Características</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Home#benefits">Beneficios</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Home#Requisitos">Requisitos</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Home#testimonials">Testimonios</a></li>
+      </ul>
+      <button class="btn btn-outline-light ms-md-3">Contacto</button>
+    </div>
+  </nav>
+
+  <router-outlet />
+  
+  <footer class="footer text-white py-4">
+    <div class="container text-center flex-column ">
+      <div class="mb-3 d-md-flex flex-row justify-content-between">
+        <div class="mb-3">
+          <a href="/Home#features" class="text-white mx-2">Características</a>
+          <a href="/Home#benefits" class="text-white mx-2">Beneficios</a>
+          <a href="/Home#Requisitos" class="text-white mx-2">Requisitos</a>
+          <a href="/Home#testimonials" class="text-white mx-2">Testimonios</a>
+        </div>
+        <div>
+          <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white mx-2"><i class="fab fa-vimeo-v"></i></a>
+          <a href="#" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <hr>
+      <div class="mb-3 d-md-flex flex-row justify-content-between">
+        <p class="mb-2">&copy; 2024 Banco Internacional. Todos los derechos reservados.</p>
+        <div>
+          <a href="#" class="text-white mx-2">Términos de servicio</a>
+          <a href="#" class="text-white mx-2">Políticas de privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>

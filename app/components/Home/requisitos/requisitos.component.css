@@ -1,0 +1,87 @@
+.text-orange {
+    color: #ff5722;
+}
+
+.pricing {
+    background-color: #ffffff;
+}
+
+.pricing-image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Aspect ratio 16:9 */
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.pricing-image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pricing-info .icon {
+    font-size: 2.5rem;
+    color: #ff5722;
+}
+
+.pricing-info h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.pricing-info p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.pricing-info ul {
+    padding: 0;
+    list-style: none;
+}
+
+.pricing-info ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-info ul li i {
+    margin-right: 10px;
+}
+
+.btn-orange {
+    background-color: #ff5722;
+    border-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-orange:hover {
+    background-color: #e64a19;
+    border-color: #e64a19;
+}
+
+.file-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .pricing-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .pricing-info p,
+    .pricing-info ul li {
+        font-size: 0.875rem;
+    }
+}
